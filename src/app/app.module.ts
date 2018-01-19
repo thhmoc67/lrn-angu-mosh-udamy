@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LikeComponent } from './like/like.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LikeComponent
   ],
   imports: [
     BrowserModule

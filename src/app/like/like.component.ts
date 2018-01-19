@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
-import { LikeComponent } from './like/like.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-like',
+  templateUrl: './like.component.html',
+  styleUrls: ['./like.component.css']
 })
-export class AppComponent {
-  title = 'app';
+export class LikeComponent {
+
   
-  
-  constructor( private like_count: number, private is_selected : Boolean) {
+  constructor( private like_count: number, private is_selected : boolean) {
   
   }
   
@@ -29,5 +27,5 @@ export class AppComponent {
    getisSelected(){
      return this.is_selected;
    }
- 
+  
 }
